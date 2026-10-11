@@ -7,10 +7,10 @@ function Blog() {
       <PageBanner title="Blog" />
       <section className="container page-content">
         <div className="section">
-          <img className="image" src={blogImage} alt="Why does your business need a website?" />
+          <img data-anim="up" className="image" src={blogImage} alt="Why does your business need a website?" />
         </div>
 
-        <article className="blog-post">
+        <article className="blog-post" data-anim="up">
           <h2>Why does your business need a website?</h2>
           <p className="quote">‘Businesses work today to create a better tomorrow.’</p>
           <p>

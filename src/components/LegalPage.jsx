@@ -47,9 +47,9 @@ function LegalPage({ title, description, path, sections }) {
       <Meta title={`${title} | InviteApp by Foroly Technologies`} description={description} path={path} />
       <PageBanner title={title} />
       <section className="container page-content">
-        <p className="last-updated">Last updated: {LAST_UPDATED}</p>
+        <p className="last-updated" data-anim="up">Last updated: {LAST_UPDATED}</p>
         {sections.map((section) => (
-          <div className="legal-section" key={section.title}>
+          <div className="legal-section" key={section.title} data-anim="up">
             <h3>{section.title}</h3>
             {section.blocks.map((block, i) => (
               <Block key={i} block={block} />

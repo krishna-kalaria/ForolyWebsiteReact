@@ -1,0 +1,38 @@
+// Scroll reveal. `reveal-ready` is added to <html> by main.jsx so content is never
+// hidden when JavaScript is off. Elements are revealed by useScrollReveal.
+.reveal-ready [data-anim] {
+  opacity: 0;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 0.61, 0.36, 1);
+  will-change: opacity, transform;
+
+  &[data-anim="up"] {
+    transform: translateY(40px);
+  }
+
+  &[data-anim="down"] {
+    transform: translateY(-40px);
+  }
+
+  &[data-anim="left"] {
+    transform: translateX(-50px);
+  }
+
+  &[data-anim="right"] {
+    transform: translateX(50px);
+  }
+
+  &.in-view {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-ready [data-anim] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

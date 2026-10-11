@@ -30,8 +30,8 @@ function Services() {
   return (
     <section className="services">
       <div className="container services-inner">
-        <h2 className="section-title">Services</h2>
-        <div className="accordion">
+        <h2 className="section-title" data-anim="up">Services</h2>
+        <div className="accordion" data-anim="up">
           {services.map((service, i) => {
             const isOpen = active === i
             return (

@@ -13,7 +13,7 @@ function DeleteAccount() {
       />
       <PageBanner title="Delete Account" />
       <section className="container page-content">
-        <div className="legal-section">
+        <div className="legal-section" data-anim="up">
           <h3>Delete your InviteApp account and data</h3>
           <p>
             You can delete your InviteApp account and the data linked to it at any time. There are
@@ -21,7 +21,7 @@ function DeleteAccount() {
           </p>
         </div>
 
-        <div className="legal-section">
+        <div className="legal-section" data-anim="up">
           <h3>Option 1: Delete it in the app</h3>
           <ol>
             <li>Open InviteApp and sign in.</li>
@@ -30,7 +30,7 @@ function DeleteAccount() {
           </ol>
         </div>
 
-        <div className="legal-section">
+        <div className="legal-section" data-anim="up">
           <h3>Option 2: Ask us by email</h3>
           <p>
             Email <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a> from the phone number or
@@ -39,7 +39,7 @@ function DeleteAccount() {
           </p>
         </div>
 
-        <div className="legal-section">
+        <div className="legal-section" data-anim="up">
           <h3>What is deleted</h3>
           <ul>
             <li>Your account and profile</li>
@@ -54,14 +54,14 @@ function DeleteAccount() {
           </p>
         </div>
 
-        <div className="legal-section">
+        <div className="legal-section" data-anim="up">
           <h3>What may be kept</h3>
           <p>
             Payment records may be kept for up to 7 years, as required by Indian tax laws.
           </p>
         </div>
 
-        <div className="legal-section">
+        <div className="legal-section" data-anim="up">
           <h3>Cancelling a store purchase</h3>
           <p>
             Deleting your account does not cancel or refund a purchase made through the Apple App
@@ -71,7 +71,7 @@ function DeleteAccount() {
           </p>
         </div>
 
-        <div className="legal-section">
+        <div className="legal-section" data-anim="up">
           <h3>More information</h3>
           <p>
             Read our <Link to="/inviteapp/privacy-policy">Privacy Policy</Link> for how we handle

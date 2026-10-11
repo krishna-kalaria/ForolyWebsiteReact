@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <header className="header">
-      <nav className="navbar">
+      <nav className="navbar" data-anim="down">
         <div className="container navbar-inner">
           <Link className="navbar-brand" to="/" onClick={closeAll}>
             <img src={logo} alt="Foroly Technologies" />

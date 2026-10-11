@@ -78,9 +78,9 @@ function Support() {
       />
       <PageBanner title="InviteApp Support" />
       <section className="container page-content">
-        <h2 className="section-title">Contact us</h2>
+        <h2 className="section-title" data-anim="left">Contact us</h2>
         <div className="support-layout">
-          <div>
+          <div data-anim="left">
             <p>
               Email us at <a href={`mailto:${SUPPORT_EMAIL}`}>{SUPPORT_EMAIL}</a>. We reply within 3
               business days.
@@ -95,7 +95,7 @@ function Support() {
             </p>
           </div>
 
-          <form className="contact-form" onSubmit={onSubmit} noValidate>
+          <form className="contact-form" data-anim="right" onSubmit={onSubmit} noValidate>
             <label htmlFor="support-name">Name*</label>
             <input id="support-name" name="name" type="text" className={errors.name ? 'invalid' : undefined} placeholder="Enter your name" value={values.name} onChange={onChange} />
             <label htmlFor="support-email">Email*</label>
@@ -117,10 +117,10 @@ function Support() {
           </form>
         </div>
 
-        <h2 className="section-title support-faq-title">Troubleshooting</h2>
+        <h2 className="section-title support-faq-title" data-anim="up">Troubleshooting</h2>
         <FaqAccordion items={troubleshooting} />
 
-        <p className="support-links">
+        <p className="support-links" data-anim="up">
           <Link to="/inviteapp/privacy-policy">Privacy Policy</Link>
           <Link to="/inviteapp/terms">Terms of Service</Link>
           <Link to="/inviteapp/refund-policy">Refund Policy</Link>

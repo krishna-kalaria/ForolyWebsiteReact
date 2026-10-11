@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import './App.scss'
+import { useScrollReveal } from './hooks/useScrollReveal'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -30,6 +31,8 @@ function App() {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [pathname])
+
+  useScrollReveal(pathname)
 
   return (
     <div className="page-shell">

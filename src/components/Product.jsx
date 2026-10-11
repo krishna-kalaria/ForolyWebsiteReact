@@ -6,9 +6,9 @@ function Product() {
   return (
     <section className="product home-page">
       <div className="container product-inner">
-        <h2 className="section-title">Our Product</h2>
+        <h2 className="section-title" data-anim="left">Our Product</h2>
         <div className="product-row">
-          <div className="product-image-col">
+          <div className="product-image-col" data-anim="left">
             <img
               className="product-promo"
               src={promo}
@@ -16,7 +16,7 @@ function Product() {
               loading="lazy"
             />
           </div>
-          <div className="product-detail">
+          <div className="product-detail" data-anim="right">
           <h3>InviteApp</h3>
           <p>
             InviteApp is a mobile app for iPhone and Android by Foroly Technologies that lets you

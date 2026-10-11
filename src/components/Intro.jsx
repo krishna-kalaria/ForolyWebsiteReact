@@ -2,7 +2,7 @@ function Intro() {
   return (
     <section className="intro">
       <div className="container intro-inner">
-        <p>
+        <p data-anim="up">
           Foroly Technologies is an Indian-origin-based web design company that
           provides several kinds of IT services and solutions to some top-notch
           web design companies. We have established ourselves such that we are

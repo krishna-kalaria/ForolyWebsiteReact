@@ -39,7 +39,7 @@ function Footer() {
     <footer className="footer">
       <div className="container footer-inner">
         <div className="footer-grid">
-          <div className="footer-col">
+          <div className="footer-col" data-anim="up" data-delay="0">
             <h3 className="footer-header">InviteApp</h3>
             <ul>
               {inviteAppLinks.map((l) => (
@@ -50,7 +50,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="footer-col">
+          <div className="footer-col" data-anim="up" data-delay="100">
             <h3 className="footer-header">Quick Links</h3>
             <ul>
               {quickLinks.map((l) => (
@@ -61,7 +61,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="footer-col">
+          <div className="footer-col" data-anim="up" data-delay="200">
             <h3 className="footer-header">Projects</h3>
             <ul>
               {projects.map((l) => (
@@ -74,7 +74,7 @@ function Footer() {
             </ul>
           </div>
 
-          <div className="footer-col">
+          <div className="footer-col" data-anim="up" data-delay="300">
             <h3 className="footer-header">Contact Details</h3>
             <div className="contact email">
               <h4>Email:</h4>
@@ -105,7 +105,7 @@ function Footer() {
         </div>
       </div>
 
-      <p className="copyright-text">
+      <p className="copyright-text" data-anim="fade">
         Copyright &copy;{currentYear}. All Rights Reserved. Made with{' '}
         <img src={heart} alt="love" /> by Foroly Technologies
       </p>

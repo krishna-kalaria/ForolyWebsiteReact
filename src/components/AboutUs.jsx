@@ -5,9 +5,9 @@ function AboutUs() {
   return (
     <section className="about-us home-page">
       <div className="container about-us-inner">
-        <h2 className="section-title">About Us</h2>
+        <h2 className="section-title" data-anim="up">About Us</h2>
         <div className="about-us-wrapper">
-          <div className="about mission-wrap">
+          <div className="about mission-wrap" data-anim="left">
             <h3>
               <img src={mission} alt="" />
               Mission
@@ -17,7 +17,7 @@ function AboutUs() {
               functionality which helps in customer's business growth.
             </p>
           </div>
-          <div className="about">
+          <div className="about" data-anim="right">
             <h3>
               <img src={vision} alt="" />
               Vision

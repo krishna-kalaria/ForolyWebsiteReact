@@ -5,7 +5,7 @@ function About() {
     <div className="about-page">
       <PageBanner title="About US" />
       <section className="container page-content">
-        <div className="description">
+        <div className="description" data-anim="up">
           <p>
             Foroly Technologies is a web and mobile application development
             company with Indian roots specializing in offering various IT

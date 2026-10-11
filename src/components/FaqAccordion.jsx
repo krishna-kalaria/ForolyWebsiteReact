@@ -4,7 +4,7 @@ function FaqAccordion({ items }) {
   const [active, setActive] = useState(null)
 
   return (
-    <div className="services faq-wrap">
+    <div className="services faq-wrap" data-anim="up">
       <div className="accordion">
         {items.map((item, i) => {
           const isOpen = active === i

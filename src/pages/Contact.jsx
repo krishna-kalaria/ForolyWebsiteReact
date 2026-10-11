@@ -58,9 +58,9 @@ function Contact() {
     <div className="contact-page">
       <PageBanner title="Contact US" />
       <section className="container page-content">
-        <h2 className="section-title">Get in Touch</h2>
+        <h2 className="section-title" data-anim="left">Get in Touch</h2>
         <div className="contact-layout">
-          <form className="contact-form" onSubmit={onSubmit} noValidate>
+          <form className="contact-form" data-anim="left" onSubmit={onSubmit} noValidate>
             <label htmlFor="name">Full Name*</label>
             <input id="name" name="name" className={errors.name ? 'invalid' : undefined} aria-invalid={!!errors.name} type="text" placeholder="Enter your full name" value={values.name} onChange={onChange} />
 
@@ -90,7 +90,7 @@ function Contact() {
             )}
           </form>
 
-          <aside className="contact-wrap">
+          <aside className="contact-wrap" data-anim="right">
             <div className="contact-block">
               <h5>Email:</h5>
               <span><MailIcon /><a href="mailto:forolytechnologies@gmail.com">forolytechnologies@gmail.com</a></span>

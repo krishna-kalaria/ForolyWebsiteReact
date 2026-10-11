@@ -16,7 +16,7 @@ function PolicyPage({ title, description, path, sections }) {
       <section className="container page-content">
         {sections.length === 0 && <p>Content coming soon.</p>}
         {sections.map((section, n) => (
-          <div className="legal-section" key={section.title || n}>
+          <div className="legal-section" key={section.title || n} data-anim="up">
             {section.title && <h3>{section.title}</h3>}
             {section.blocks.map((block, i) => {
               if (Array.isArray(block)) {
