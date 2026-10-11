@@ -1,0 +1,76 @@
+$bg-light: #f7f7f4;
+$brand-orange: #f59d38;
+$brand-green: #2eb673;
+$text: #1d2733;
+$muted: #58697a;
+$border: rgba(17, 24, 39, 0.08);
+
+:root {
+  font-family: "Geogrotesque", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $text;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+  color: $text;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin-top: 0;
+}
+
+button,
+a {
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+body,
+button,
+a,
+input,
+textarea,
+select {
+  font-family: "Geogrotesque", sans-serif;
+}

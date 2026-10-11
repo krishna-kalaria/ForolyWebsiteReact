@@ -1,0 +1,251 @@
+@import "./styles/bootstrap";
+@import "./styles/settings";
+@import "./styles/font";
+@import "./styles/base";
+@import "./styles/typography";
+@import "./styles/button";
+@import "./styles/form";
+@import "./styles/header";
+@import "./styles/footer";
+@import "./styles/component";
+@import "./styles/home";
+@import "./styles/inviteapp";
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+  background: #000;
+}
+
+.page-shell {
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+}
+
+.site-header {
+  position: relative;
+  z-index: 10;
+  padding-top: 22px;
+}
+
+.top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.brand {
+  margin-left: 10px;
+}
+
+.brand-logo {
+  display: block;
+  height: 78px;
+  width: auto;
+  object-fit: contain;
+}
+
+.menu-button {
+  width: 52px;
+  height: 52px;
+  margin-right: 16px;
+  border: 0;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.menu-button span {
+  display: block;
+  width: 42px;
+  height: 4px;
+  border-radius: 2px;
+  background: #f4d448;
+}
+
+.hero-section {
+  position: relative;
+  min-height: calc(100vh - 90px);
+  background: linear-gradient(
+    180deg,
+    rgba(17, 21, 17, 0.7),
+    rgba(17, 21, 17, 0.88)
+  );
+  padding-top: 16px;
+}
+
+.hero-scene {
+  position: relative;
+  width: min(100%, 1500px);
+  margin: 0 auto;
+  height: 760px;
+}
+
+.hero-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(0.7) contrast(1.08);
+}
+
+.title-stack {
+  position: absolute;
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 4;
+}
+
+.title-stack h1 {
+  margin: 0;
+  font-size: clamp(4rem, 7vw, 9rem);
+  line-height: 0.82;
+  letter-spacing: -0.09em;
+  font-weight: 300;
+  color: rgba(245, 245, 239, 0.88);
+}
+
+.title-stack h1 span {
+  display: block;
+  font-weight: 300;
+}
+
+.title-stack p {
+  margin: 18px 0 0;
+  font-size: clamp(1.3rem, 2vw, 2.6rem);
+  letter-spacing: 0.12em;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+
+.social-rail {
+  position: absolute;
+  right: 24px;
+  top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 8;
+}
+
+.social-icon {
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #f7d14e 0%, #f7c534 100%);
+  color: #0b0d0c;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  box-shadow: 0 12px 24px rgba(242, 196, 54, 0.26);
+}
+
+.whatsapp-float {
+  position: fixed;
+  left: 26px;
+  bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #3ad78a 0%, #1fa25d 100%);
+  box-shadow: 0 12px 28px rgba(32, 182, 98, 0.25);
+  z-index: 20;
+}
+
+.whatsapp-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+}
+
+@media (max-width: 980px) {
+  .brand-logo {
+    height: 60px;
+  }
+
+  .social-rail {
+    right: 12px;
+    gap: 12px;
+  }
+
+  .social-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+  }
+
+  .hero-scene {
+    height: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding-top: 18px;
+  }
+
+  .top-row {
+    padding: 0 12px;
+  }
+
+  .menu-button {
+    margin-right: 0;
+  }
+
+  .menu-button span {
+    width: 34px;
+  }
+
+  .brand-logo {
+    height: 54px;
+  }
+
+  .hero-section {
+    min-height: 100vh;
+  }
+
+  .hero-scene {
+    height: 620px;
+  }
+
+  .title-stack {
+    top: 42%;
+    width: calc(100% - 36px);
+  }
+
+  .title-stack h1 {
+    font-size: 3.2rem;
+  }
+
+  .title-stack p {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  }
+
+  .social-rail {
+    display: none;
+  }
+}

@@ -1,0 +1,153 @@
+import { Link } from 'react-router-dom'
+import PolicyPage from '../components/PolicyPage'
+
+const sections = [
+  {
+    title: "Introduction",
+    blocks: [
+      "Foroly’s mission is to inspire creativity and bring joy. We are building a global community where users can create and share authentically, discover the world around them, and connect with others across the globe. We are also committed to keeping this community safe.",
+      "Our Community Guidelines reflect our values and define a common code of conduct on our platform. Our Community Guidelines apply to everyone, and to everything shared on Foroly. They provide general guidance on what is and what is not allowed on the platform. We also recognize that some content that would normally be removed per our guidelines could have value to the public.",
+      "We aim to cultivate an environment for authentic interactions by keeping deceptive content and accounts off our platform. We update our Community Guidelines from time to time to evolve with community behavior, mitigate emerging risks, and keep Foroly a safe place for creativity and joy.",
+      "Therefore, we may allow exceptions under certain circumstances, as described in the sections below. Offering a safe and supportive environment is our top priority. We believe that feeling safe is essential to helping people feel comfortable with expressing themselves openly and creatively.",
+      "We do not allow dangerous individuals or organizations to use our platform to promote terrorism, crime, or other types of behavior that could cause harm. When there is a credible threat to public safety, we handle the issue by banning the account and cooperating with relevant legal authorities.",
+      "We define dangerous individuals and organizations as those that commit crimes or cause other types of severe harm. The types of groups and crimes include, but are not limited to:",
+      [
+        "Blackmailing",
+        "Money laundering",
+        "Fraud",
+        "Hate groups",
+        "Arms trafficking",
+        "Drug trafficking",
+        "Kidnapping",
+        "Violent extremist organizations",
+        "Homicide",
+        "Human trafficking",
+        "Organ trafficking",
+        "Extortion",
+        "Cybercrime",
+      ],
+    ],
+  },
+  {
+    title: "Strictly Follow these Rules:",
+    blocks: [
+      [
+        "Do not post content that offers the purchase, sale, or trade of unlawfully acquired goods.",
+        "Do not post content that provides instructions on how to conduct criminal activities.",
+        "Do not post content that risks the safety of others, including pranks like swatting.",
+        "Do not post content that promotes human exploitation or wildlife trafficking.",
+        "Do not post content that promotes acts of physical harm, such as assaulting or kidnapping.",
+        "Do not post any Names, symbols, logos, flags, slogans, gestures, portraits, or other objects meant to represent dangerous individuals and/or organizations.",
+        "Do not post any content that praises, glorifies, or supports dangerous individuals and/or organizations.",
+        "Some content may be removed if it relates to activities or goods that are illegal or regulated in the majority of the region or world, even if the activities or goods in question are legal in the jurisdiction of posting.",
+        "Do not post content that displays firearms, firearm accessories, ammunition, or explosive weapons",
+        "Do not post content that offers, sells, trades, or solicits firearms, accessories, ammunition, explosive weapons, or instructions on how to manufacture them.",
+        "We allow exceptions for content that provides value to the public, such as educational, scientific, artistic, and newsworthy content.",
+        "Criminal activities cover a wide spectrum of acts punishable by law, including theft, assault, human exploitation, and other harmful behavior.",
+        "Because we do not want such behavior to be normalized or imitated, we remove content that promotes criminal activities.",
+        "To protect our community, we generally do not allow the depiction, trade, or promotion of firearms, ammunition, firearm accessories, or explosive weapons. We also prohibit instructions on how to manufacture those weapons.",
+        "We may give exceptions to content that displays firearms or other types of weapons in the following scenarios: in a fictional setting, as part of a museum's collection, carried by a police officer, in a military parade, or used in a safe and controlled environment such as a shooting range.",
+        "Do not post content that displays drugs, drug consumption, or encourages others to make, use, or trade drugs or other controlled substances.",
+        "Do not post content that sells, offers, trades, or solicits drugs or other controlled substances.",
+        "Do not post content that provides information on how to buy illegal or controlled substances.",
+        "Do not post content that promotes phishing.",
+        "Do not post content that promotes Ponzi or pyramid schemes.",
+        "Do not post content that promotes fixed betting, get-rich-quick schemes, or any other types of scams.",
+        "Do not post content that is gratuitously shocking, sadistic, or excessively graphic, including but not limited to depictions of violent or accidental deaths involving real people, depictions of dismembered, mutilated, charred, or burned human remains, depictions of gore in which an open wound or injury is the core focus depictions of severe physical violence.",
+        "Do not post content that is gratuitously shocking, sadistic, or excessively graphic, including but not limited to depictions of the slaughter of real animals, depictions of dismembered, mutilated, charred, or burned animal remains, depictions of animal cruelty.",
+        "We do not promote participation in activities that could lead to harm. We also do not permit users to encourage others to take part in dangerous activities.",
+        "We do not allow content that promotes self-harm or suicide, but we do allow our users to share their experiences in order to raise awareness about these issues.",
+        "We encourage users who are struggling with thoughts of self-harm or suicide, or who know someone is seriously considering suicide, to immediately contact legal authorities or a suicide prevention hotline.",
+        "We remove content that displays suicide, suicidal tendencies, or content that might encourage participation in similar actions. This includes attempted suicide or content featuring a person committing or intending to commit acts that are likely to lead to self-inflicted death.",
+        "We prohibit any form of content that praises, glorifies, or promotes suicide, or instructs others on how to commit suicide.",
+        "Do not post content that provides instructions on how to commit suicide.",
+        "Do not post content that praises, promotes, or glorifies suicide.",
+        "Do not post Suicide challenges.",
+        "To avoid normalizing, encouraging, or triggering self-harm behavior, we do not allow imagery that depicts such behavior, regardless of the user's intention of posting it.",
+        "We remove content that encourages or may encourage acts that are likely to lead to physical self-inflicted injury. Content that promotes eating habits that are likely to cause health issues is also not allowed on the platform.",
+        "Do not post content that shows self-inflicted wounds.",
+        "Do not post content that provides instructions on how to commit self-harm.",
+        "Do not post content that supports dangerous behavior to lose weight.",
+        "Do not post content that shows the inappropriate use of dangerous tools.",
+        "Do not post content that depicts drinking liquids or eating substances not meant for consumption.",
+        "Do not post dangerous challenges that might lead to injury.",
+        "Do not post content that depicts minors below the lawful age operating motor vehicles.",
+        "We do not tolerate content that attacks or incites violence against an individual or a group of individuals on the basis of protected attributes.",
+        "We do not allow content that includes hate speech, and we remove it from our platform. We also suspend or ban accounts that have multiple hate speech violations.",
+        "Do not post content that dehumanizes or incites violence or hatred against individuals or groups, based on the attributes listed above, including but not limited to claiming that they are physically or morally inferior, calling for or justifying violence against them, claiming that they are criminals, referring negatively to them as animals, inanimate objects, or other non-human entities, promoting or justifying exclusion, segregation, or discrimination against them.",
+        "Do not post content that invokes non-consensual slurs.",
+        "Do not post content that promotes any hateful ideologies by talking positively about or displaying logos, symbols, flags, slogans, uniforms, salutes, gestures, portraits, illustrations, or names of individuals related to these ideologies.",
+        "Do not post content that denies well-documented and violent events have taken place.",
+        "Do not post Music or lyrics that promote hateful ideologies.",
+        "Users should feel safe to express themselves without fear of being shamed, humiliated, bullied, or harassed. We deeply understand the psychological distress that abusive content can have on individuals, and we do not tolerate abusive content or behavior on our platform.",
+        "Do not post content that threatens an individual with violence.",
+        "Do not post content that wishes death, serious disease, physical, or other harm on an individual.",
+        "Do not post content that incites violence or coordinated harassment.",
+        "Do not post content that sexually harasses a user by disparaging their sexual activities or attempting to make unwanted sexual contact.",
+        "Do not post content that disparages a private individual on the basis of attributes such as intellect, appearance, personality traits, or hygiene.",
+        "Do not post content that praises violent tragedies and disparages their victims.",
+        "Do not post content that uses the duet, react, or effects features of Foroly to create abusive content targeting other users.",
+        "Do not post content that reveals or threatens to reveal personally identifiable information, including but not limited to residential address, private email address, private phone number, bank statement, social security number, or passport number.",
+        "Do not post Threats to reveal sexual imagery or non-consensual intimate imagery.",
+        "We do not allow sexually explicit or gratifying content on Foroly, including animated content of this nature.",
+        "Sexualized content carries many risks, such as triggering legal penalties in some jurisdictions and causing harm to our users through sharing non-consensual imagery (for example, revenge porn).",
+        "Do not post content that depicts, commits, or incites non-consensual sexual acts.",
+        "Do not post content that commits, promotes, or glorifies sexual solicitation or sexual objectification.",
+        "Do not post content that depicts sexual activities such as penetration, non-penetrative sex, or oral sex.",
+        "Do not post content that shows human genitalia, female nipples, or buttocks.",
+        "Do not post content that depicts sexual arousal.",
+        "Do not post content that shows the private parts of minors.",
+        "Do not post content that depicts sexual exploitation of minors.",
+        "Do not post content that depicts sexual activities such as penetration, non-penetrative sex, or oral sex involving minors.",
+        "Do not post content that depicts sexual arousal involving minors.",
+        "Do not post content that depicts a sexual fetish involving minors.",
+        "Do not post content that depicts minors consuming, possessing, or suspected of consuming alcoholic beverages, drugs, or tobacco.",
+        "Do not post content that depicts physical or psychological abuse involving minors.",
+        "Do not post content that encourages, instructs, or justifies grooming behavior.",
+        "Do not post content that engages a minor in a sexually explicit conversation.",
+        "Do not post content that incentivizes or blackmails a child to transmit sexually explicit material.",
+        "Do not post content that depicts erotic dances involving minors.",
+        "Do not post content that contains sexual or erotic language involving minors.",
+        "Do not post share instructions on how to artificially increase views, likes, followers, shares, or comments.",
+        "Do not post attempt to or engage in selling or buying views, likes, followers, shares, or comments.",
+        "Do not promote artificial traffic generation services.",
+        "Operate multiple Foroly accounts under false or fraudulent pretenses, including coordinated attempts to manufacture inauthentic activity, distribute commercial spam, or otherwise coordinate a scaled violation of Foroly policies.",
+        "As another person or organization by using someone else's name, biographical details, or profile picture in a misleading manner.",
+        "Do not post misinformation that incites hate or prejudice.",
+        "Do not post misinformation related to emergencies that induces panic.",
+        "Do not post medical misinformation that causes harm to an individual's physical health.",
+        "Do not post content that misleads community members about elections or other civic processes.",
+        "Do not post Hoaxes or phishing attempt.",
+        "Do not post Digital Forgeries (Synthetic Media or Manipulated Media) that mislead users by distorting the truth of events and cause harm to the subject of the video or society.",
+        "Do not Engage in coordinated inauthentic activities (such as the creation of accounts) to exert influence and sway public opinion while misleading individuals, our community or the larger public about the account's identity, location or purpose.",
+        "Do not post content that violates or infringes someone else's copyrights, trademarks, or other intellectual property rights.",
+        "Do not hack the Foroly website, app, or associated networks, or bypass its measures to restrict users’ access.",
+        "Do not distribute files that contain viruses, Trojan horses, worms, logic bombs, or other materials that are malicious or harmful.",
+        "Do not modify, adapt, translate, reverse engineer, disassemble, decompile, or create any derivative products based on Foroly, including any files, tables or documentation, nor attempt to regenerate any source code, algorithms, methods, or techniques embodied in Foroly.",
+        "Do not use automated scripts to collect information from Foroly.",
+      ],
+    ],
+  },
+  {
+    blocks: [
+      "Thank you for being a part of our vibrant global community and working with us to maintain a safe space for all users.",
+      <p key="report">
+        If you come across content or accounts that you believe may violate our Community Guidelines, please{' '}
+        <Link to="/contact-us">let us know</Link> so we can review and take appropriate action.
+      </p>,
+    ],
+  },
+]
+
+function CommunityGuidelines() {
+  return (
+    <PolicyPage
+      title="Community Guidelines"
+      description="Foroly Technologies community guidelines: the code of conduct for what is and is not allowed on our platform."
+      path="/community-guidelines"
+      sections={sections}
+    />
+  )
+}
+
+export default CommunityGuidelines

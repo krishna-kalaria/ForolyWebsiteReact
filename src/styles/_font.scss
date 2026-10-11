@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Geogrotesque";
+  src: url("../assets/fonts/geogrotesque.woff2") format("woff2");
+  font-display: fallback;
+}
+
+$geogrotesque: "Geogrotesque", sans-serif;

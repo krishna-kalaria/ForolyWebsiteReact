@@ -1,0 +1,147 @@
+.footer {
+  padding: 40px 0 20px;
+  border-top: 1px solid #fc3;
+
+  .logo {
+    margin-bottom: 20px;
+
+    @media (max-width: 767px) {
+      max-width: 150px;
+    }
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  a {
+    color: $white;
+    font-weight: bold;
+  }
+
+  h3,
+  h4 {
+    color: $orange;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .contact {
+    margin-bottom: 20px;
+
+    span {
+      display: flex;
+
+      a {
+        padding-left: 10px;
+        line-height: 1.2;
+      }
+    }
+
+    &.email {
+      a {
+        word-break: break-all;
+      }
+    }
+  }
+
+  .footer-header {
+    margin-bottom: 20px;
+  }
+
+  .copyright-text {
+    border-top: 1px solid $orange;
+    color: $orange;
+    margin: 0;
+    padding: 20px 15px 0;
+    font-size: 18px;
+    text-align: center;
+
+    @media (min-width: 992px) {
+      white-space: nowrap;
+    }
+
+    img {
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      vertical-align: middle;
+    }
+  }
+}
+
+// Layout
+.footer {
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px 0 30px;
+
+    @media (max-width: 991px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 575px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  .footer-header {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  ul {
+    margin: 0;
+
+    li {
+      margin-bottom: 4px;
+    }
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .contact {
+    h4 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+
+    span {
+      align-items: center;
+      margin-bottom: 6px;
+
+      svg {
+        flex: none;
+      }
+    }
+  }
+
+  .copyright-text img {
+    vertical-align: middle;
+  }
+
+  .whatsapp {
+    position: fixed;
+    left: 15px;
+    bottom: 15px;
+    z-index: 9;
+    background: none;
+    -webkit-text-fill-color: unset;
+
+    img {
+      display: block;
+    }
+  }
+}

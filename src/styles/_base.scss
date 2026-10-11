@@ -1,0 +1,83 @@
+html {
+  background-color: $black;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $black;
+  color: $white;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: $geogrotesque;
+  letter-spacing: 0.5px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+}
+
+a {
+  display: inline-block;
+  color: $white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  background-image: linear-gradient(to right, $orange, $orange 50%, white 50%);
+
+  &:hover {
+    background-position: 0;
+    text-decoration: none;
+    transition: all 0.9s cubic-bezier(0, 0, 0.23, 1);
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.desktop-show {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.mobile-show {
+  display: none;
+
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.page-wrap {
+  padding: 30px 0;
+
+  ul {
+    list-style: disc;
+  }
+
+  a {
+    -webkit-text-fill-color: $orange;
+  }
+}
+
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// index.scss turns font synthesis off and the font has no bold file, so allow a synthesized bold
+b,
+strong {
+  font-synthesis: weight;
+}

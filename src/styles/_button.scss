@@ -1,0 +1,18 @@
+.btn {
+  background-color: $orange;
+  border: none;
+  color: $black;
+  font-size: 18px;
+  box-shadow: none !important;
+
+  @media (max-width: 767px) {
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: $orange-dark;
+    color: $black;
+    border: none !important;
+    box-shadow: none !important;
+  }
+}

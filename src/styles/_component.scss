@@ -1,0 +1,477 @@
+.section-title {
+  color: $orange;
+  margin-bottom: 20px;
+  font-weight: 700;
+  // index.scss turns font synthesis off; the font has no bold file, so allow a synthesized bold here
+  font-synthesis: weight;
+}
+
+.section {
+  margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+#toTop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  border: 0;
+  border-radius: 100%;
+  background: $orange;
+  color: $black;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:hover {
+    background: $orange-dark;
+  }
+}
+
+#whatsapp {
+  bottom: 15px;
+  left: 15px;
+  z-index: 9;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../assets/banner.webp");
+  height: 500px;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .banner-content {
+    position: relative;
+    z-index: 1;
+
+    h1 {
+      margin: 0 0 20px;
+      font-size: 56px;
+      font-weight: 400;
+
+      @media (max-width: 767px) {
+        font-size: 36px;
+      }
+    }
+
+    p {
+      margin: 0;
+      font-size: 22px;
+    }
+  }
+}
+
+.page-banner {
+  background-image: url("../assets/contact-banner.webp");
+  height: 250px;
+}
+
+.service-page .page-banner {
+  background-image: url("../assets/services.webp");
+  height: 250px;
+}
+
+.about-page .page-banner {
+  background-image: url("../assets/about.webp");
+  height: 250px;
+}
+
+.about-page .description h3 {
+  color: #fc3;
+}
+
+.career-page .page-banner {
+  background-image: url("../assets/join-team-banner.webp");
+  height: 250px;
+}
+
+.blog-page .page-banner {
+  background-image: url("../assets/blog.webp");
+  height: 250px;
+}
+
+.page {
+  padding: 40px 0;
+  padding-top: 0;
+}
+
+.contact-page {
+  .contact-wrap {
+    h5 {
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .contact {
+    margin-bottom: 20px;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+
+  .social-media-wrap {
+    position: static;
+    transform: unset;
+
+    ul {
+      display: flex;
+      gap: 12px;
+
+      li {
+        margin-bottom: 0;
+        background-color: transparent;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        a {
+          background: none;
+          color: $white;
+        }
+
+        &:hover a {
+          color: $orange;
+        }
+
+        i {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    @media (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.service-page {
+  ul {
+    list-style-type: none;
+
+    li {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 0px;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+      }
+
+      &::before {
+        border-bottom-color: $orange;
+      }
+
+      &::after {
+        top: 10px;
+        border-top-color: $orange;
+      }
+    }
+  }
+
+  h3 {
+    color: $orange;
+    margin-bottom: 20px;
+  }
+}
+
+.services-wrap {
+  margin-bottom: 50px;
+  display: inline-block;
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+
+  &.reverse {
+    img {
+      margin-right: 0;
+      margin-left: 20px;
+    }
+  }
+
+  img {
+    transition: all 0.9s ease 0s;
+    transform: scale(0.95);
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+      float: none !important;
+      width: 100%;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.blog-page {
+  .section {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  ul {
+    list-style: disc;
+  }
+
+  .image {
+    max-width: 50%;
+    margin: 0 auto;
+
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+  }
+}
+
+.read-more {
+  margin-top: 20px;
+}
+
+.read-more a {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.page-banner {
+  .banner-content h1 {
+    margin: 0;
+    font-size: 40px;
+
+    @media (max-width: 767px) {
+      font-size: 30px;
+    }
+  }
+}
+
+.page-content {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media (max-width: 767px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  p {
+    margin: 0 0 20px;
+    line-height: 1.85;
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    font-size: 32px;
+    font-weight: 400;
+    color: $orange;
+  }
+}
+
+.service-page {
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .service-description {
+    text-align: justify;
+
+    &::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    .service-image {
+      float: left;
+      width: 535px;
+      max-width: 40%;
+      height: auto;
+      margin: 10px 40px 20px 15px;
+
+      &.right {
+        float: right;
+        margin: 10px 15px 20px 40px;
+      }
+
+      @media (max-width: 767px) {
+        float: none;
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 20px !important;
+      }
+    }
+  }
+}
+
+.blog-page {
+  .page-content {
+    padding-top: 40px;
+  }
+
+  .section {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .blog-post {
+    h2 {
+      margin: 0 0 10px;
+      font-size: 36px;
+      font-weight: 400;
+
+      @media (max-width: 767px) {
+        font-size: 26px;
+      }
+    }
+
+    h3 {
+      margin: 40px 0 16px;
+      font-size: 30px;
+      color: $white;
+    }
+
+    h4 {
+      margin: 30px 0 12px;
+      font-size: 24px;
+      font-weight: 400;
+      color: $orange;
+    }
+
+    .quote {
+      font-size: 22px;
+    }
+
+    ul {
+      margin: 0 0 20px;
+      padding-left: 24px;
+
+      li {
+        margin-bottom: 8px;
+        line-height: 1.85;
+      }
+    }
+  }
+}
+
+.contact-page {
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 40px;
+    align-items: start;
+
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .contact-form {
+    textarea {
+      resize: vertical;
+    }
+
+    input {
+      height: 54px;
+    }
+
+    .invalid {
+      border-color: $orange;
+      box-shadow: 0 0 5px 0 $orange;
+    }
+
+    .btn {
+      padding: 10px 18px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-success {
+      margin: 20px 0 0;
+      color: $orange;
+    }
+  }
+
+  .contact-block {
+    margin-bottom: 24px;
+
+    h5 {
+      margin: 0 0 12px;
+      font-size: 18px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 6px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+
+}
